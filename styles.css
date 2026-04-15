@@ -351,6 +351,7 @@ nav a:hover {
     margin-bottom: 40px;
     font-size: 38px;
     color: #a855f7;
+    font-weight: 800;
 }
 
 .section p {
@@ -556,7 +557,7 @@ nav a:hover {
 
 @media (max-width: 768px) {
   .section h2 {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .skills-grid {
@@ -760,7 +761,7 @@ nav a:hover {
   }
 
   .projects-title {
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 45px;
   }
 
@@ -946,7 +947,7 @@ nav a:hover {
   }
 
   .section-title {
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 40px;
   }
 
@@ -1428,6 +1429,11 @@ footer {
 /* ========================= */
 
 @media (max-width: 768px) {
+  #education .container,
+  #experience .container {
+    width: 90%;
+  }
+}
   section, header, footer, nav, div {
     max-width: 100%;
   }
@@ -1521,6 +1527,10 @@ footer {
 
     .section h2 {
         font-size: 22px;
+    }
+
+    #skills h2 {
+        font-size: 26px;
     }
 }
 
