@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Akshith Reddy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/AR.svg">
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+    <div class="logo">Akshith Reddy</div>
+
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+    <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="https://drive.google.com/file/d/1kyFhl9MnuSIDnIa4JyWwmbCy0cDmQEgR/view?usp=sharing" target="_blank" rel="noopener">Resume</a></li>
+    </ul>
+    </nav>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+        const links = document.querySelectorAll("#nav-links a");
+
+        hamburger.addEventListener("click", function() {
+            navLinks.classList.toggle("active");
+        });
+
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+            });
+        });
+    });
+    </script>
+
+    <!-- Hero Section -->
+    
+    <header class="hero">
+
+    <div class="hero-container">
+
+        <!-- Left Side (Avatar + Social) -->
+        <div class="hero-left">
+
+            <div class="hero-image">
+                <img src="Assets/hero_laptop.svg" alt="Akshith Reddy" class="hero-img">
+            </div>
+
+            <!-- Social Icons -->
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/akshith-reddy-aleti/" target="_blank" rel="noopener">
+                    <img src="Assets/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/akshithreddyyy" target="_blank" rel="noopener">
+                    <img src="Assets/github.svg" alt="GitHub">
+                </a>
+                <a href="mailto:akshithreddy@umass.edu" target="_blank" rel="noopener">
+                    <img src="Assets/google.svg" alt="Email">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Right Side (Content) -->
+        <div class="hero-content">
+
+            <p class="intro">Hello! I am <span>Akshith Reddy</span></p>
+
+            <h1>
+                I
+                <span>
+                    turn data <br>into
+                    <span class="highlight">decisions</span></br>
+                </span>
+            </h1>
+
+            <p class="sub-text">
+                Because insights are only powerful when they drive action.
+            </p>
+
+        </div>
+
+    </div>
+
+    </header>
+
+    <!-- About Me -->
+ 
+    <section id="about" class="about">
+        <div class="container">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-grid">
+
+        <!-- LEFT TEXT -->
+        <div class="about-text">
+            <p>
+            I'm a 🎓 <strong>Master's student in Business Analytics</strong>, building on my experience as an Analyst 
+            and exploring how data can support better business decisions. Through my academic work 
+            and professional experience, I’ve developed a strong interest in using <strong>analytics and visualization</strong> 📊 
+            to make complex information easier to understand and act on.
+            </p>
+
+            <p>
+            I enjoy working at the intersection of 
+            <strong>data, strategy, and execution 🚀</strong>, 
+            where insights can help teams make clearer, more confident decisions.
+            </p>
+        </div>
+
+        <!-- RIGHT HIGHLIGHT CARDS -->
+            <div class="about-cards">
+
+                <div class="about-card">
+                <h3>📊&nbsp;Data Driven</h3>
+                <p>Transform raw data into actionable insights and strategic recommendations.</p>
+                </div>
+
+                <div class="about-card">
+                <h3>🧠 &nbsp;Business Strategy</h3>
+                <p>Translate business requirements into scalable processes and analytics.</p>
+                </div>
+
+                <div class="about-card">
+                <h3>🛠&nbsp;Tools & Tech</h3>
+                <p>Python,&ensp;Tableau,&ensp;SQL,&ensp;Excel,&ensp;ETL,&ensp;Agile,&ensp;Scrum,&ensp;EDA</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+
+        <div class="skills-visual">
+            <img src="Assets/Skills.svg" alt="Skills visualization">
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <h3 class="skill-title">Business & Data Analysis</h3>
+                <div class="skill-tags">
+                    <span><img src="Assets/logos/sql.svg" alt="SQL">SQL</span>
+                    <span><img src="Assets/logos/python.svg" alt="Python" class="simg-lg">Python</span>
+                    <span><img src="Assets/logos/tableau.svg" alt="Tableau">Tableau</span>
+                    <span><img src="Assets/logos/excel.svg" alt="Excel">Excel</span>
+                    <span><img src="Assets/logos/PowerBI.svg" alt="Power BI" class="simg-sm">Power BI</span>
+                    <span><img src="Assets/logos/streamlit.svg" alt="Streamlit">Streamlit</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-title">Machine Learning Tools</h3>
+                <div class="skill-tags">
+                    <span><img src="Assets/logos/scikitlearn.svg" alt="Scikit-learn" class="simg-lg">Scikit-learn</span>
+                    <span><img src="Assets/logos/pandas.svg" alt="Pandas">Pandas</span>
+                    <span><img src="Assets/logos/numpy.svg" alt="NumPy">NumPy</span>
+                    <span><img src="Assets/logos/Matplotlib.svg" alt="Matplotlib" class="simg-lg">Matplotlib</span>
+                    <span><img src="Assets/logos/r.svg" alt="R" class="simg-lg">R Programming</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-title">Databases & Cloud</h3>
+                <div class="skill-tags">
+                    <span><img src="Assets/logos/mysql.svg" alt="MySQL" class="simg-lg">MySQL</span>
+                    <span><img src="Assets/logos/bigquery.svg" alt="BigQuery" class="simg-sm">BigQuery</span>
+                    <span><img src="Assets/logos/mongodb.svg" alt="MongoDB" class="simg-lg">MongoDB</span>
+                    <span><img src="Assets/logos/snowflake.svg" alt="Snowflake">Snowflake</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-title">Project Management Tools</h3>
+                <div class="skill-tags">
+                    <span><img src="Assets/logos/jira.svg" alt="JIRA" class="simg-lg">JIRA</span>
+                    <span><img src="Assets/logos/confluence.svg" alt="Confluence" class="simg-sm">Confluence</span>
+                    <span><img src="Assets/logos/MSProject.svg" alt="MS Project">MS Project</span>
+                    <span><img src="Assets/logos/Visio.svg" alt="Visio">Visio</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-title">Others</h3>
+                <div class="skill-tags">
+                    <span><img src="Assets/logos/github.svg" alt="GitHub">GitHub</span>
+                    <span><img src="Assets/logos/vscode.svg" alt="VS Code" class="simg-sm">VS Code</span>
+                    <span><img src="Assets/logos/MsPowerPoint.svg" alt="MS PowerPoint" class="simg-sm">MS PowerPoint</span>
+                    <span><img src="Assets/logos/html.svg" alt="HTML">HTML</span>
+                    <span><img src="Assets/logos/css.svg" alt="CSS">CSS</span>
+                    <span><img src="Assets/logos/figma.svg" alt="Figma" class="simg-sm">Figma</span>
+                    <span><img src="Assets/logos/adobexd.svg" alt="Adobe XD">Adobe XD</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+
+    <section id="education" class="education">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="edu-grid">
+
+        <!-- Card 1 -->
+        <div class="edu-card">
+            <div class="edu-top">
+            <div class="edu-badge">2024 – 2026</div>
+            <div class="edu-type">Master’s</div>
+            </div>
+
+            <h3 class="edu-degree">M.S. in Business Analytics</h3>
+            <p class="edu-school">University of Massachusetts, Amherst</p>
+
+            <div class="edu-meta">
+            <span>📍 Amherst, MA</span>
+            <span>🏅 CGPA 3.96</span>
+            </div>
+
+            <p class="edu-desc">
+            Focused on analytics strategy, data visualization, experimentation, and decision making.
+            Built projects across SQL, BI dashboards, and business problem solving.
+            </p>
+
+            <div class="edu-tags">
+            <span>SQL</span>
+            <span>Tableau</span>
+            <span>Business Intelligence</span>
+            <span>ETL</span>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="edu-card">
+            <div class="edu-top">
+            <div class="edu-badge">2019 – 2023</div>
+            <div class="edu-type">Bachelor’s</div>
+            </div>
+
+            <h3 class="edu-degree">B.Tech Electrical & Electronics Engineering</h3>
+            <p class="edu-school">Mahindra University</p>
+
+            <div class="edu-meta">
+            <span>📍 Hyderabad, India</span>
+            </div>
+
+            <p class="edu-desc">
+            Built a strong foundation in programming, systems, and analytical thinking.
+            Developed problem solving skills by combining engineering principles with data driven thinking.
+            </p>
+
+            <div class="edu-tags">
+            <span>Statistics</span>
+            <span>Data Structures</span>
+            <span>Python</span>
+            <span>UI / UX</span>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    <!-- demo project -->
+    <section id="projects" class="projects">
+        <div class="container">
+
+            <h2 class="projects-title">Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project-row">
+                <div class="project-info">
+                    <p class="project-tag">Featured Project</p>
+                    <h3 class="project-name">KPI Dashboard & Insights</h3>
+
+                <div class="project-card">
+                    Built an interactive dashboard to track core KPIs, identify performance drivers,
+                    and surface weekly insights for stakeholders. Focused on clarity, actionability,
+                    and decision-ready reporting.
+                </div>
+
+                <div class="project-links">
+                    <a href="#" class="project-link" aria-label="Project link" rel="noopener">View Project ↗</a>
+                </div>
+            </div>
+
+            <div class="project-visual">
+                <img src="Assets/boston_city.jpeg" alt="Project mockup" loading="lazy">
+            </div>
+        </div>
+
+    <!-- Project 2 (reversed) -->
+    <div class="project-row reverse">
+        <div class="project-info">
+                <p class="project-tag">Featured Project</p>
+                <h3 class="project-name">Process Optimization (BRD Workflow)</h3>
+
+                <div class="project-card">
+                    Streamlined BRD intake and prioritization by introducing a structured template,
+                    clear acceptance criteria, and a lightweight review cadence—reducing backlog and
+                    improving turnaround time.
+                </div>
+
+                <div class="project-links">
+                    <a href="#" class="project-link" aria-label="Project link" rel="noopener">View Project ↗</a>
+                </div>
+        </div>
+
+            <div class="project-visual">
+                    <img src="Assets/boston_city.jpeg" alt="Project mockup" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- Experience -->
+
+    <section id="experience" class="experience">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="exp-timeline">
+
+        <!-- Item 1 -->
+        <div class="exp-item">
+            <div class="exp-dot"></div>
+
+            <div class="exp-card">
+            <div class="exp-header">
+                <div>
+                <h3 class="exp-role">Business Analyst</h3>
+                <p class="exp-company"> 💼 AES LLP <span class="sep">•</span> 📍 Hyderabad, India</p>
+                </div>
+
+                <p class="exp-time">Aug 2022 – Aug 2024</p>
+            </div>
+
+            <ul class="exp-bullets">
+                <li>Coordinated 8+ cross-functional stakeholders to align weekly/monthly deliverables, reducing miscommunication by 30% and accelerating delivery timelines by 25%.</li>
+                <li>Developed and automated 5+ KPI dashboards in Tableau and Excel (pivot tables, VLOOKUP), reducing manual reporting time by 30% for 3 senior stakeholders.</li>
+                <li>Conducted statistical analysis and data modeling on business datasets, translating business requirements into insights that supported strategic planning and forecasting decisions.</li>
+                <li>Documented 10+ SOPs, improving operational model efficiency by 20% and ensuring consistent strategy execution across teams.</li>
+            </ul>
+
+            <div class="exp-tags">
+                <span>Tableau</span>
+                <span>Excel</span>
+                <span>Statistical Analysis</span>
+                <span>Data Modeling</span>
+                <span>Documentation</span>
+            </div>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="exp-item">
+            <div class="exp-dot"></div>
+
+            <div class="exp-card">
+            <div class="exp-header">
+                <div>
+                <h3 class="exp-role">Data Analyst Intern</h3>
+                <p class="exp-company"> 💼 Silicon Labs <span class="sep">•</span> 📍 Hyderabad, India</p>
+                </div>
+
+                <p class="exp-time">Dec 2021 – Jul 2022</p>
+            </div>
+
+            <ul class="exp-bullets">
+                <li>Analyzed datasets to identify trends and performance drivers, enabling 30% faster decision-making across business teams.</li>
+                <li>Leveraged Python across 8+ projects for data analysis, increasing team throughput by 20%.</li>
+                <li>Built and maintained 4 Tableau dashboards, delivering real-time KPI visibility to senior stakeholders.</li>
+                <li>Supported 3+ product development cycles by collaborating with cross-functional teams and providing data-driven guidance, reducing decision turnaround by 20%.</li>
+            </ul>
+
+            <div class="exp-tags">
+                <span>Python</span>
+                <span>Tableau</span>
+                <span>Data Analysis</span>
+                <span>KPI Reporting</span>
+                <span>Cross-functional Collaboration</span>
+            </div>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="exp-item">
+            <div class="exp-dot"></div>
+
+            <div class="exp-card">
+            <div class="exp-header">
+                <div>
+                <h3 class="exp-role">Analyst Intern</h3>
+                <p class="exp-company"> 💼 Phoenix India <span class="sep">•</span> 📍 Hyderabad, India</p>
+                </div>
+
+                <p class="exp-time">May 2021 – Nov 2021</p>
+            </div>
+
+            <ul class="exp-bullets">
+                <li>Analyzed 1.2M+ operational data points to uncover production inefficiencies and improve production efficiency.</li>
+                <li>Standardized reporting templates across teams, improving reporting consistency by 45%.</li>
+                <li>Delivered performance analysis reports to support operational decision-making and business outcomes.</li>
+            </ul>
+
+            <div class="exp-tags">
+                <span>SQL</span>
+                <span>Excel</span>
+                <span>Data Analysis</span>
+                <span>Reporting</span>
+                <span>Process Improvement</span>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="contact">
+    <div class="container">
+
+        <div class="contact-wrap">
+        <p class="contact-kicker">Let’s build something impactful</p>
+
+        <p class="contact-subtitle">
+            I’m currently looking to join a cross functional team that values data driven insights and sharp decision making.
+            Got an opportunity or a project in mind? Let’s connect.
+        </p>
+
+        <!-- CTA row -->
+        <div class="contact-actions">
+            <a class="contact-btn" href="mailto:akshithreddy@umass.edu" rel="noopener">
+            Email Me
+            </a>
+
+            <!-- click to copy -->
+            <button class="contact-copy" id="copyEmail" type="button" aria-label="Copy email">
+            <span class="copy-text" id="emailText">akshithreddy@umass.edu</span>
+            <span class="copy-hint" id="copyHint">Click to copy</span>
+            </button>
+        </div>
+
+        <!-- Social icons (reuse your same icons) -->
+        <div class="contact-social">
+            <a href="https://linkedin.com/in/akshith-reddy-aleti" target="_blank" aria-label="LinkedIn" rel="noopener">
+            <img src="Assets/linkedin.svg" alt="LinkedIn">
+            </a>
+
+            <a href="https://github.com/akshithreddyyy" target="_blank" aria-label="GitHub" rel="noopener">
+            <img src="Assets/github.svg" alt="GitHub">
+            </a>
+
+        </div>
+
+        </div>
+
+    </div>
+    </section>
+
+
+    <footer>
+        <p>Akshith Reddy Aleti Portfolio © 2026</p>
+    </footer>
+
+
+    <div id="backToTop" class="orb"></div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        const orb = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 300) {
+                orb.style.display = "block";
+                orb.style.opacity = "1";
+            } else {
+                orb.style.opacity = "0";
+                setTimeout(() => {
+                    orb.style.display = "none";
+                }, 300);
+            }
+        });
+
+        orb.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+    });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("copyEmail");
+        const hint = document.getElementById("copyHint");
+        const email = document.getElementById("emailText").innerText;
+
+        if (!btn) return;
+
+        btn.addEventListener("click", async () => {
+            try {
+            await navigator.clipboard.writeText(email);
+            hint.textContent = "Copied ✓";
+            setTimeout(() => (hint.textContent = "Click to copy"), 1200);
+            } catch (e) {
+            hint.textContent = "Copy failed";
+            setTimeout(() => (hint.textContent = "Click to copy"), 1200);
+            }
+        });
+        });
+    </script>
+
+
+
+</body>
+</html>
